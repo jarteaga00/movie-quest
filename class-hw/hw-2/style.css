@@ -1,0 +1,155 @@
+/*Background and html scroll-behavior */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #02D512;
+}
+html{
+  scroll-behavior: smooth;  
+}
+/*This is the navigation bar set up, ul is a list for the nav bar. li are in the ul, going to add more.
+ the navbar ul li a:hover is really cool adds the nice green when you hover over the options in nar bar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 2px;
+}
+.navbar ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #11A724;
+    color: black;
+    box-shadow: 10 10 10px #11A724;
+}
+
+/* This is the Home section setting up the body for the page. H1 has a background color to give a nice break away
+h2 dont need one.*/
+
+.headings{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 105px;
+    text-align: right;
+    margin: 40px 0px;
+}
+h1{
+    background-color: #11A724;
+    display: center;
+    font-size: 65px;
+    text-align: center;
+    padding: 60px;
+}
+h2{
+    display: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    height: 10px;
+}
+/*This is my about me section, simple text layout I added a grey background to make the text eaiser to read.
+I added a selfie and set it to the side */
+#about{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 90px;
+    margin-bottom: 90px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B4B4B4;
+    padding: 10px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 700px;
+    height:470px;
+}
+#into{
+    display: flex;
+    flex-direction: justify;
+    padding: 10px;
+}
+
+/*My Projects will go here, I set it up where once I complete projects I can easily add it to my page.
+Here image has a hyperlink, one a project is ready I can screenshot it and easily add the url. Each images 
+has it own class */
+#projects{
+    display: column;
+    flex-direction: wrap;
+    background-color: #000;
+    color: #11A724;
+    padding: 80px;
+}
+.images1 img{
+    float: left;
+    padding: 40px;
+    width: 560px;
+    height: 540px;
+    margin: 10px;
+}
+
+.images2 img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+/*This is the contact section, I found a cool video on how to set it up, simple text box and the send button works.
+I have it set up to send to my email. */
+#contact{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20 px 0px;
+    padding: 90px;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 60%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 150%;
+    padding: 20px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
