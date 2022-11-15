@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="#tablet.css">
+    <link rel="stylesheet" media="screen and (max-wdth: 530px)" href="phone.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="heading"><b> Hello, my name is Andres</b></h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="pic">
+            <img src="/Images/solo.jpg" alt="">
+            <h2 class="heading"> About Me </h2>
+            <div id="intro">
+                <p>
+                    Hello, my name is Andres Garcia but I perfer to be call Andy. I am 28 years old; I love to cook,
+                    watch anime, read books, and messing around with code. My goal is to learn everything I can to
+                    become a full stack webdevelper.I remember back in highschool I used to spent time after school
+                    making horrible games that didnt even work most of the times. Adobe flash was a nightmare to work
+                    with...most of the times, but after hours of messing around, adding and deleting line of code over
+                    and over again. I eventually got something working and I was able to move a stick figure around.
+                    Seeing everyone enjoy what I made definitely gave me a sense of joy/pride. I continue trying to make
+                    games. <br>
+                    After highschool I went to college but unfortunately it did not work out. I started working
+                    in the meat and seafood department after college for 2 major retail company and I fell in love with
+                    it.
+                    Transforming a big piece of meat or a huge wholefish and transforming into beautiful steaks or
+                    amazing
+                    fillets. I worked my way up to managment, assistance manager to be exact. I got the opportunity to
+                    learn
+                    kinfes skills, communcation skills, and managment skills, but I lost a sense of happyiness. One day
+                    I was
+                    on lunch, and I stumble on a video explaining how to make your own name generator. From there I
+                    clicked
+                    another video, than another, and another and that's when I decided to find a new career.I did some
+                    research
+                    and found the UCLA Coding Bootcamp.Now I'm learning alot and I can't wait to be a fullstack
+                    webdevelper.
+
+                </p>
+    </section>
+
+    <section id="projects">
+        <h2 class="headings">Projects</h1>
+
+            <div class="images1">
+                <a href="https://giphy.com/gifs/art-progress-deco-jUCchUC6z66niwD10z/fullscreen">
+                    <img src="/Images/math.jpg" alt="Simple pic with math symbols">
+                </a>
+            </div>
+            <div class="images2">
+                <a href="https://giphy.com/gifs/work-working-workinprogress-q3qWgf5k4QHyAwis94/fullscreen">
+                    <img src="/Images/game.jpg" alt="">
+                </a>
+            </div>
+            <div class="images2">
+                <a href="https://giphy.com/gifs/coffee-time-coffetime-WYssFEXor61mKf053O/tile">
+                    <img src="/Images/dwp.jpg" alt="">
+                </a>
+            </div>
+
+    </section>
+
+    <section id="contact">
+        <h2 class="heading"> Contact Me </h2>
+        <form action="https://formsubmit.co/a.garcia.atn31@gmail.com" method="POST" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name ">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+/*Background and html scroll-behavior */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #02D512;
+}
+html{
+  scroll-behavior: smooth;  
+}
+/*This is the navigation bar set up, ul is a list for the nav bar. li are in the ul, going to add more.
+ the navbar ul li a:hover is really cool adds the nice green when you hover over the options in nar bar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 2px;
+}
+.navbar ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #11A724;
+    color: black;
+    box-shadow: 10 10 10px #11A724;
+}
+
+/* This is the Home section setting up the body for the page. H1 has a background color to give a nice break away
+h2 dont need one.*/
+
+.headings{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 105px;
+    text-align: right;
+    margin: 40px 0px;
+}
+h1{
+    background-color: #11A724;
+    display: center;
+    font-size: 65px;
+    text-align: center;
+    padding: 60px;
+}
+h2{
+    display: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    height: 10px;
+}
+/*This is my about me section, simple text layout I added a grey background to make the text eaiser to read.
+I added a selfie and set it to the side */
+#about{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 90px;
+    margin-bottom: 90px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B4B4B4;
+    padding: 10px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 700px;
+    height:470px;
+}
+#into{
+    display: flex;
+    flex-direction: justify;
+    padding: 10px;
+}
+
+/*My Projects will go here, I set it up where once I complete projects I can easily add it to my page.
+Here image has a hyperlink, one a project is ready I can screenshot it and easily add the url. Each images 
+has it own class */
+#projects{
+    display: column;
+    flex-direction: wrap;
+    background-color: #000;
+    color: #11A724;
+    padding: 80px;
+}
+.images1 img{
+    float: left;
+    padding: 40px;
+    width: 560px;
+    height: 540px;
+    margin: 10px;
+}
+
+.images2 img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+/*This is the contact section, I found a cool video on how to set it up, simple text box and the send button works.
+I have it set up to send to my email. */
+#contact{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20 px 0px;
+    padding: 90px;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 60%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 150%;
+    padding: 20px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+
+
+/* home */
+#home{
+    height: 820px;
+}
+.headings{
+    font-size: 1.7rem;
+}
+#pic ul{
+
+}
+
+/* About */
+
+#pic img{
+    width: 300px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+/* Portfolio */
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* Contact */
+.input{
+    width: 80%;
+}
+#msg{
+    width: 70%;
+}
+#send{
+    width: 20%;
+}
+
+
+
+phone
+
+
+/* home */
+#home{
+    height: 820px;
+}
+.headings{
+    font-size: 1.7rem;
+}
+#pic ul{
+
+}
+
+/* About */
+
+#pic img{
+    width: 300px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+/* Portfolio */
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* Contact */
+.input{
+    width: 80%;
+}
+#msg{
+    width: 70%;
+}
+#send{
+    width: 20%;
+}
+
+
+tablet
+
+/* NavBar */
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* About */
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 475px;
+    height: 300px;
+}
+#intro h2{
+    text-align: center;
+    padding: 10px;
+}
+/* contact */
+.input{
+    width: 60%;
+}
+#msg{
+    width: 55%;
+}
+#send{
+    width: 20%;
+}
+
+
+
+
+
+
+
